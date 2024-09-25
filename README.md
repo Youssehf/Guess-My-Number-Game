@@ -9,7 +9,6 @@ Welcome to the "Guess My Number!" game! This is a simple web-based game where pl
 - [Usage](#usage)
 - [Files](#files)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Demo
 You can play the game live [HERE](https://youssehf.github.io/Guess-My-Number-Game/)
