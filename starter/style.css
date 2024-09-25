@@ -56,7 +56,7 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
-.number {
+.numberParent {
   background: #eee;
   color: #333;
   font-size: 6rem;
@@ -116,5 +116,29 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+.tooltip {
+  visibility: hidden; /* Hidden by default */
+  width: 150px;
+  font-size: x-small; 
+  line-height: 1.5;/* Set the width of the tooltip */
+  background-color: black; /* Background color */
+  color: #fff; /* Text color */
+  text-align: center; /* Centered text */
+  border-radius: 5px; /* Rounded corners */
+  padding: 5px; /* Some padding */
+  position: absolute; /* Position the tooltip */
+  z-index: 1; /* Sit on top */
+  top: 103%; /* Position it above the element */
+  left: 40%; /* Center it horizontally */
+  margin-left: -60px; /* Adjust to center */
+  opacity: 0; /* Invisible by default */
+  transition: opacity 0.3s; /* Fade effect */
+}
+
+.numberParent:hover .tooltip {
+  visibility: visible; /* Show the tooltip on hover */
+  opacity: 1; /* Fully visible */
 }
 
